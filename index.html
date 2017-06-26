@@ -1,0 +1,31 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Amortization Calculator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body ng-app="AmortizationCalculator">
+
+	<div ng-include="'partials/navbar.html'"></div>
+	<div ng-view></div>
+	
+
+
+
+
+	<!-- jQuery & Angular installations -->
+	<script type="text/javascript" src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/lib/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/lib/bower_components/angular-route/angular-route.min.js"></script>
+
+	<!-- App scripts -->
+	<script type="text/javascript" src="/javascripts/app.js"></script>
+	<script type="text/javascript" src="/javascripts/appConfig.js"></script>
+	<script type="text/javascript" src="/javascripts/Controllers/AffordabilityCtrl.js"></script>
+	<script type="text/javascript" src="/javascripts/Controllers/AmortizationCtrl.js"></script>
+</body>
+</html>
