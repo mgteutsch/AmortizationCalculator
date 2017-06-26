@@ -7,6 +7,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<!--
+	<link rel="stylesheet" href="lib/bower_components/odometer/themes/odometer-theme-default.css"/>
+	-->
+	<link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
+	<script src="http://github.hubspot.com/odometer/odometer.js"></script>
 </head>
 <body ng-app="AmortizationCalculator">
 
@@ -17,10 +22,28 @@
 
 
 
+
+	<footer>
+		<hr/>
+			<div class="center-align">
+				<i class="material-icons center-align">monetization_on</i>
+			</div>
+		<hr/>
+		<br/>
+	</footer>
+
 	<!-- jQuery & Angular installations -->
 	<script type="text/javascript" src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="/lib/bower_components/angular/angular.min.js"></script>
 	<script type="text/javascript" src="/lib/bower_components/angular-route/angular-route.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>	
+
+	<!--Odometer installation from https://www.npmjs.com/package/angular-odometer-js -->
+	<!--
+	<script src="lib/bower_components/odometer/odometer.js"></script>
+	<script src="lib/bower_components/angular-odometer-js/dist/angular-odometer.js"></script>
+	-->
+	
 
 	<!-- App scripts -->
 	<script type="text/javascript" src="/javascripts/app.js"></script>

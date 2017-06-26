@@ -3,7 +3,7 @@
 app.config(function($routeProvider){
 	$routeProvider
 		.when('/',{ 
-			templateUrl: 'partials/amortizationCalc.html',
+			templateUrl: 'partials/amortizationCalculator.html',
 			controller: 'AmortizationCtrl'
 		})
 		.when('/About', {
