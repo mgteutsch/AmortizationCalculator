@@ -5,7 +5,8 @@ app.controller("AmortizationCtrl", function($q, $scope, $rootScope, $location){
 	//To handle certain dynamic items in Materialize, they must be initialized:
 	$(document).ready(function () {
 		$('select').material_select();
-	});
+		$('.collapsible').collapsible();
+	});    
 	//*************************************************************************
 
 	var originalPrice = 0;
@@ -63,6 +64,20 @@ app.controller("AmortizationCtrl", function($q, $scope, $rootScope, $location){
 		$scope.testNumber = "";
 		$scope.testNumber = 436373;
 		*/
+	};
+
+
+
+	//Email functions *******************************************
+	$scope.emailSend = function(userEmailInputs) {
+		console.log("User email is: ", userEmailInputs.EmailAddress);
+		console.log("User message is: ", userEmailInputs.Message);
+		$scope.UserEmail = {};
+
+	};
+
+	$scope.emailCancel = function(inputsToClear) {
+		$scope.UserEmail = {};
 	};
 
 
