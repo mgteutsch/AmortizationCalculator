@@ -7,9 +7,79 @@
 		<h3 class="teal-text">Choose how much you'd like to pay per month:</h3>
 		<br/>
 
-			<div class="input-field">
-				<i class="material-icons prefix">attach_money</i>
-				<input id="monthlyPayment" type="text" class="col s5 offset-s1" placeholder="Type your ideal monthly payment here" ng-model="monthlyPayment">
+		<div class="input-field">
+			<i class="material-icons prefix">attach_money</i>
+			<input id="monthlyPayment" type="text" class="col s5 offset-s1" placeholder="Type your ideal monthly payment here" ng-model="MonthlyPayment">
+		</div>
+
+		<br/>
+
+		<div class="row input-field">
+			
+			<div class="col s6 right-align">
+				<h5 class="teal-text">Select your interest rate:</h5>
 			</div>
+
+			<div class="col s3 offset-s1">
+				<select ng-model="InterestRate">
+					<option value="" disabled selected>Select Rate</option>
+					<option value="0.0300">3.00%</option>
+					<option value="0.0325">3.25%</option>
+					<option value="0.0350">3.50%</option>
+					<option value="0.0375">3.75%</option>
+					<option value="0.0400">4.00%</option>
+					<option value="0.0425">4.25%</option>
+					<option value="0.0450">4.50%</option>
+					<option value="0.0475">4.75%</option>
+					<option value="0.0500">5.00%</option>
+					<option value="0.0525">5.25%</option>
+					<option value="0.0550">5.50%</option>
+					<option value="0.0575">5.75%</option>
+					<option value="0.0600">6.00%</option>
+				</select>
+			</div>
+
+			<div class="col s6 right-align">
+				<h5 class="teal-text">Select your loan term:</h5>
+			</div>
+
+			<div class="col s3 offset-s1">
+				<select ng-model="TermMonths">
+					<option value="" disabled selected>Select Years</option>
+					<option value="12">1 year</option>
+					<option value="24">2 years</option>
+					<option value="36">3 years</option>
+					<option value="48">4 years</option>
+					<option value="60">5 years</option>
+				</select>
+			</div>
+		</div>
+
+		<br/>
+		<hr/>
+
+		<div class="center">
+			<a class="waves-effect waves-light btn-large" ng-click="calculateTotalAffordability();"><i class="material-icons left">local_atm</i>Calculate</a>
+		</div>
+
+		<div ng-show="showAffordabilityResult">
+			<h2 class="center">Your Original Loan Amount is:</h2>
+			<h2 class="center pink-text text-accent-3">{{AffordabilityResult | currency}}</h2>
+		</div>
+
+		<hr/>
+
+
+
+
 	</div>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
 </div>
